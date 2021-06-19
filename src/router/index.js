@@ -52,16 +52,12 @@ const routes = [
     name: "用户",
     component: () =>
       import(/* webpackChunkName: "UserProfile" */ "../views/user/Index.vue"),
-    children: [
-      {
-        path: "/user/login",
-        name: "登录",
-        component: () =>
-          import(
-            /* webpackChunkName: "UserLogin" */ "../views/user/Login.vue"
-          ),
-      },
-    ],
+  },
+  {
+    path: "/user/login/",
+    name: "登录",
+    component: () =>
+      import(/* webpackChunkName: "UserLogin" */ "../views/user/Login.vue"),
   },
 ];
 

@@ -39,11 +39,10 @@
 </template>
 
 <script>
-import { defineComponent } from "@vue/composition-api";
 import TheNav from "./components/TheNav";
 import TheFooter from "./components/TheFooter";
 
-export default defineComponent({
+export default {
   data: () => {
     return {
       drawer: null,
@@ -53,7 +52,7 @@ export default defineComponent({
     TheNav,
     TheFooter,
   },
-});
+};
 </script>
 
 <style lang="scss"></style>
