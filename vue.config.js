@@ -1,3 +1,3 @@
-export const transpileDependencies = [
+exports.transpileDependencies = [
   'vuetify'
 ];
